@@ -11,5 +11,5 @@ class Dog
     self.id ||= nil
   end
 
-  def self.
+  
 end
