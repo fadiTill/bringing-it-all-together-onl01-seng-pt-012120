@@ -4,8 +4,12 @@ class Dog
 
 
   def initialize(id=nil, name:, breed:)
-    @id = id
-    @name = name
-    @breed = breed
+    # @id = id
+    # @name = name
+    # @breed = breed
+    attributes.each {|key, value| self.send(("#{key}="), value)}
+    self.id ||= nil
   end
+
+  def self.
 end
